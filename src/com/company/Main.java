@@ -1,6 +1,8 @@
 package com.company;
 
 import com.company.inherit.Tiger;
+import com.company.polymorphism.BlackPrinter;
+import com.company.polymorphism.ColorPrinter;
 
 public class Main {
 
@@ -11,8 +13,18 @@ public class Main {
 //        System.out.println(student.getGender());
 //        System.out.println(student.getAge());
 
+        //for the inherit task
+//        Tiger tiger = new Tiger();
+//        tiger.call();
 
-        Tiger tiger = new Tiger();
-        tiger.call();
+        //for the polymorphism task
+        //overload
+        ColorPrinter colorPrinter = new ColorPrinter();
+        colorPrinter.printing("red");
+        //override
+        BlackPrinter blackPrinter = new BlackPrinter();
+        blackPrinter.printing();
+
+
     }
 }
